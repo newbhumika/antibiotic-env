@@ -1,0 +1,10 @@
+name: antibiotic-stewardship-env
+description: RL environment for antibiotic decision-making under resistance constraints
+version: 1.0
+
+entry_point: environment:AntibioticEnv
+
+tasks:
+  - easy
+  - medium
+  - hard
