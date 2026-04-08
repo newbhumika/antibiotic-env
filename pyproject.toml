@@ -1,0 +1,20 @@
+[project]
+name = "antibiotic-env"
+version = "0.1.0"
+description = "Antibiotic Resistance Stewardship OpenEnv Environment"
+authors = [{ name="Bhumika Shukla" }]
+
+dependencies = [
+  "pydantic",
+  "fastapi",
+  "uvicorn",
+  "openai",
+  "openenv>=0.1.10"
+]
+
+[project.scripts]
+start = "server.app:app"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
